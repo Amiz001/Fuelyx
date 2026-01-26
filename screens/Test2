@@ -1,0 +1,122 @@
+import {
+  View,
+  Text,
+  Image,
+  Button,
+  Pressable,
+  KeyboardAvoidingView,
+  TextInput,
+} from "react-native";
+import { useState } from "react";
+import { StyleSheet } from "react-native";
+import { LinearGradient } from "expo-linear-gradient";
+import { Dimensions, Platform } from "react-native";
+
+const { width, height } = Dimensions.get("window");
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: "#fff",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+
+  card: {
+    width: width - 100,
+    height: height / 2,
+    borderRadius: 20,
+    backgroundColor: "#474747ff",
+    paddingVertical: 40,
+    elevation: 20,
+
+    justifyContent: "flex-start",
+    alignItems: "center",
+    gap: 16,
+  },
+
+  mainText: {
+    color: "#000",
+    fontWeight: "600",
+    fontSize: 28,
+    textTransform: "capitalize",
+  },
+
+  subText: {
+    color: "#000",
+    fontSize: 18,
+  },
+
+  image: {
+    width: 150,
+    height: 150,
+    borderRadius: 100,
+  },
+
+  btn: {
+    width: 80,
+    borderRadius: 6,
+    color: "#fff",
+    alignItems: "center",
+    padding: 10,
+    fontSize: 16,
+    backgroundColor: "#000",
+  },
+});
+
+export default function Test1() {
+  const [number1, setNumber1] = useState(0);
+  const [number2, setNumber2] = useState(0);
+
+  return (
+    <>
+      {/*
+    <LinearGradient
+      colors={["#4e46e540", "#06b6d440"]}
+      style={styles.container}
+    >
+      <LinearGradient colors={["#4f46e5", "#06b6d4"]} style={styles.card}>
+        <Image source={require("./assets/amiz.jpg")} style={styles.image} />
+        <View>
+          <Text style={styles.mainText}>Amila malshan</Text>
+          <Text style={styles.subText}>React Native Developer</Text>
+        </View>
+
+        <Pressable onPress={() => {alert("Shut the fuck up!")}} style={({pressed}) => {
+          return [pressed && {transform: [{scale: 0.96}]}]
+        }}>
+          <Text style={styles.btn}>About Me</Text>
+        </Pressable>
+      </LinearGradient>
+    </LinearGradient>
+    */}
+
+      <KeyboardAvoidingView
+        behavior={Platform.OS === "ios" ? "padding" : "height"}
+        style={styles.container}
+      >
+        <View
+          style={{
+            width: 200,
+            flexDirection: "column",
+            justifyContent: "flex-start",
+            gap: 12,
+          }}
+        >
+          <Text style={styles.subText}>Enter numbers </Text>
+          
+          <Pressable
+            style={({ pressed }) => [
+              styles.btn,
+              pressed && { transform: [{ scale: 0.96 }] },
+            ]}
+            onPress={() => {
+              alert("Sum is " + (+number1 + +number2));
+            }}
+          >
+            <Text style={{ color: "#fff" }}>Add</Text>
+          </Pressable>
+        </View>
+      </KeyboardAvoidingView>
+    </>
+  );
+}
