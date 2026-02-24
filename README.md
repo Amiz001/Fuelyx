@@ -5,7 +5,7 @@ It allows users to log fuel expenses manually, upload receipts, and (in progress
 
 The goal is to help users track fuel costs, analyze consumption, and manage monthly expenses efficiently.
 
----
+</br>
 
 ## 🚀 Features
 
@@ -20,25 +20,29 @@ The goal is to help users track fuel costs, analyze consumption, and manage mont
 - Protected API routes
 - Cloud storage ready for images
 
----
+</br>
 
 ## 🛠️ Tech Stack
 
 **Frontend**
 - React Native
 - Expo
+- React Navigation
+- Axios
+- Expo Image Picker / Camera
 
 **Backend**
 - Node.js
 - Express.js
-
-**Database**
-- MongoDB (Mongoose)
+- MongoDB
+- Mongoose
+- JWT Authentication
+- Multer (image upload handling)
 
 **Other Tools**
 - Git & GitHub
 
----
+</br>
 
 ## 📸 Screenshots
 <img width="393" height="852" alt="Home" src="https://github.com/user-attachments/assets/5a638176-ad84-429f-884b-2d978c98e8e8" />
@@ -47,21 +51,29 @@ The goal is to help users track fuel costs, analyze consumption, and manage mont
 <img width="393" height="852" alt="Settings~" src="https://github.com/user-attachments/assets/df4d63a8-3287-4b34-a642-888a9f58bc7a" />
 
 
+</br></br>
 
----
+## 🗂️ Project Structure
+
+fulyx/
+│
+├── mobile-app/          # React Native Expo app
+│   ├── screens/
+│   ├── components/
+│   ├── services/api.js
+│   └── app.json
+│
+├── backend/             # Node.js API
+│   ├── models/
+│   ├── routes/
+│   ├── controllers/
+│   ├── middleware/
+│   └── server.js
+│
+└── README.md
 
 ## ⚙️ Installation & Setup
 
 ```bash
 # Clone the repository
 git clone https://github.com/your-username/parkbay.git
-
-# Backend setup
-cd backend
-npm install
-npm run dev
-
-# Frontend setup
-cd frontend
-npm install
-npm run dev
