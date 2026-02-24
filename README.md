@@ -45,35 +45,8 @@ The goal is to help users track fuel costs, analyze consumption, and manage mont
 </br>
 
 ## 📸 Screenshots
-<img width="393" height="852" alt="Home" src="https://github.com/user-attachments/assets/5a638176-ad84-429f-884b-2d978c98e8e8" />
-<img width="393" height="852" alt="Home2" src="https://github.com/user-attachments/assets/cac4ac7a-6f58-42de-9490-7f3bebcc3d60" />
-<img width="393" height="852" alt="Add Log" src="https://github.com/user-attachments/assets/ec4ed0c6-bec1-40e7-821e-8f20946e7f7b" />
-<img width="393" height="852" alt="Settings~" src="https://github.com/user-attachments/assets/df4d63a8-3287-4b34-a642-888a9f58bc7a" />
 
-
-</br></br>
-
-## 🗂️ Project Structure
-
-fulyx/
-│
-├── mobile-app/          # React Native Expo app
-│   ├── screens/
-│   ├── components/
-│   ├── services/api.js
-│   └── app.json
-│
-├── backend/             # Node.js API
-│   ├── models/
-│   ├── routes/
-│   ├── controllers/
-│   ├── middleware/
-│   └── server.js
-│
-└── README.md
-
-## ⚙️ Installation & Setup
-
-```bash
-# Clone the repository
-git clone https://github.com/your-username/parkbay.git
+<img width="35%" alt="Home" src="https://github.com/user-attachments/assets/5a638176-ad84-429f-884b-2d978c98e8e8" />
+<img width="35%" alt="Home2" src="https://github.com/user-attachments/assets/cac4ac7a-6f58-42de-9490-7f3bebcc3d60" />
+<img width="35%" alt="Add Log" src="https://github.com/user-attachments/assets/ec4ed0c6-bec1-40e7-821e-8f20946e7f7b" />
+<img width="35%" alt="Settings~" src="https://github.com/user-attachments/assets/df4d63a8-3287-4b34-a642-888a9f58bc7a" />
